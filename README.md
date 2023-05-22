@@ -5,7 +5,7 @@
 ### 🔖 Table Of Contents
 
 - [Title](#title)
-- [Minimal Requirements](#prerequisites)
+- [Prerequisites](#prerequisites)
 - [Installing](#installing)
 - [Example](#example)
 - [How To Contribute](#how-to-contribute)
@@ -14,7 +14,7 @@
 
 ---
 
-<h2 id="prerequisites">🌱 Minimal Requirements</h2>
+<h2 id="prerequisites">Prerequisites</h2>
 
 - NPM/Yarn LTS
 - NodeJs
@@ -23,7 +23,7 @@
 
 ---
 
-<h2 id="installing">🤔 How To Use</h2>
+<h2 id="installing">Installing</h2>
 
 #### 💻 Desktop
 
@@ -41,10 +41,19 @@ yarn add kafka-pub-sub
 
 ---
 
+<h2 id="example">Example</h2>
+
+
+#### Project stucture
+
+<img width="254" alt="project-structure" src="https://github.com/mdmuhtasimfuadfahim/my-packages/assets/69357704/9e0ed7e0-c7b3-45e6-bcda-f68c5a6d5933">
+
+> Note: Create NodeJS environment in both service-1 and service-2 and create server using your favourite NodeJS framewwork.
+
 #### service-1/server.js
 
 ```sh
-const ProduceEvent = require('kafka-pub-sub/ProduceEvent');
+const ProduceEvent = require('@kafka-zookeeper/produce-consume/ProduceEvent');
 
 app.post('/api', async (req, res) => {
     const fakeData = {
@@ -61,7 +70,7 @@ app.post('/api', async (req, res) => {
 #### service-2/server.js
 
 ```sh
-const ConsumeEvent = require('kafka-pub-sub/produce-consume/ConsumeEvent');
+const ConsumeEvent = require('@kafka-zookeeper/produce-consume/ConsumeEvent');
 
 (async function consumedEvent() {
     const consumedData = await ConsumeEvent('TEST_TOPIC')
@@ -109,7 +118,7 @@ services:
       KAFKA_NUM_PARTITIONS: '6'
 ```
 
-<p align="center">Now run the both service in your machine and hit the API. 🔥 </p>
+<p align="center">Now run the both services in your machine and hit the API. 🔥 </p>
 
 [Back To The Top](#title)
 
