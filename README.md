@@ -14,17 +14,16 @@
 
 ### 🔖 Table Of Contents
 
-- [Title](#title)
-- [Prerequisites](#prerequisites)
-- [Installing](#installing)
-- [Example](#example)
-- [How To Contribute](#how-to-contribute)
-- [Author](#author)
-- [License](#license)
+- 🌱 [Prerequisites](#prerequisites)
+- ⏬ [Installing](#installing)
+- 👨‍💻 [Example](#example)
+- 💡 [How To Contribute](#how-to-contribute)
+- 👤 [Author](#author)
+- 🔏 [License](#license)
 
 ---
 
-<h2 id="prerequisites">Prerequisites</h2>
+<h2 id="prerequisites">🌱 Prerequisites</h2>
 
 - NPM/Yarn LTS
 - NodeJs
@@ -33,7 +32,7 @@
 
 ---
 
-<h2 id="installing">Installing</h2>
+<h2 id="installing">⏬ Installing</h2>
 
 #### 💻 Desktop
 
@@ -51,19 +50,19 @@ yarn add kafka-pub-sub
 
 ---
 
-<h2 id="example">Example</h2>
-
+<h2 id="example">👨‍💻 Example</h2>
 
 #### Project stucture
 
-<img width="254" alt="project-structure" src="https://github.com/mdmuhtasimfuadfahim/my-packages/assets/69357704/9e0ed7e0-c7b3-45e6-bcda-f68c5a6d5933">
+<img width="254" alt="project-structure" src="https://github-production-user-asset-6210df.s3.amazonaws.com/69357704/239943567-9e0ed7e0-c7b3-45e6-bcda-f68c5a6d5933.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230522%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230522T185344Z&X-Amz-Expires=300&X-Amz-Signature=768e5f4df15877e531a0df0fb07cfcae675da8243b672a35c9fb289d0b585a3f&X-Amz-SignedHeaders=host&actor_id=69357704&key_id=0&repo_id=640056186">
+
 
 > Note: Create NodeJS environment in both service-1 and service-2 and create server using your favourite NodeJS framewwork.
 
 #### service-1/server.js
 
 ```sh
-const ProduceEvent = require('@kafka-zookeeper/produce-consume/ProduceEvent');
+const ProduceEvent = require('kafka-pub-sub/ProduceEvent');
 
 app.post('/api', async (req, res) => {
     const fakeData = {
@@ -80,7 +79,7 @@ app.post('/api', async (req, res) => {
 #### service-2/server.js
 
 ```sh
-const ConsumeEvent = require('@kafka-zookeeper/produce-consume/ConsumeEvent');
+const ConsumeEvent = require('kafka-pub-sub/ConsumeEvent');
 
 (async function consumedEvent() {
     const consumedData = await ConsumeEvent('TEST_TOPIC')
@@ -88,7 +87,7 @@ const ConsumeEvent = require('@kafka-zookeeper/produce-consume/ConsumeEvent');
 })();
 ```
 
-#### service-1/.env ** service-2/.env
+#### service-1/.env & service-2/.env
 
 ```sh
 KAFKA_CLIENT_ID=test-client
@@ -96,7 +95,7 @@ KAFKA_BROKER_URL=localhost:9092
 KAFKA_GROUP_ID=test-group
 ```
 
-#### sample ```docker-compose.yml```
+#### sample `docker-compose.yml`
 
 ```sh
 version: '2.1'
@@ -128,7 +127,7 @@ services:
       KAFKA_NUM_PARTITIONS: '6'
 ```
 
-<p align="center">Now run the both services in your machine and hit the API. 🔥 </p>
+<p align="center">Now run the both services in your machine and hit the API. 🥳 </p>
 
 [Back To The Top](#title)
 
