@@ -1,3 +1,13 @@
+[![Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/mdmuhtasimfuadfahim/kafka-pub-sub)
+
+[![NPM Version](https://img.shields.io/npm/v/kafka-pub-sub.svg?style=flat-square)](https://www.npmjs.com/package/kafka-pub-sub)
+
+[![Last Commit](https://img.shields.io/github/last-commit/mdmuhtasimfuadfahim/kafka-pub-sub?style=flat-square)](https://github.com/mdmuhtasimfuadfahim/kafka-pub-sub/commits/) ![Language Most Used](https://img.shields.io/github/languages/top/mdmuhtasimfuadfahim/kafka-pub-sub?style=flat-square) [![Implementations](https://img.shields.io/badge/%F0%9F%92%A1-implementations-8C8E93.svg?style=flat-square)](https://github.com/mdmuhtasimfuadfahim/kafka-pub-sub/issues) ![Repository Size](https://img.shields.io/github/repo-size/mdmuhtasimfuadfahim/kafka-pub-sub?style=flat-square)
+
+[![Forks](https://img.shields.io/github/forks/mdmuhtasimfuadfahim/kafka-pub-sub?style=social)](https://github.com/mdmuhtasimfuadfahim/kafka-pub-sub/network/members) [![Stars](https://img.shields.io/github/stars/mdmuhtasimfuadfahim/kafka-pub-sub?style=social)](https://github.com/mdmuhtasimfuadfahim/kafka-pub-sub/stargazers) [![Watches](https://img.shields.io/github/watchers/mdmuhtasimfuadfahim/kafka-pub-sub?style=social)](https://github.com/mdmuhtasimfuadfahim/kafka-pub-sub/watchers)
+
+[![Author GitHub](https://img.shields.io/github/followers/mdmuhtasimfuadfahim?label=Follow&style=social)](https://github.com/mdmuhtasimfuadfahim)
+
 <h1 id="title" align="center">kafka-pub-sub 👋</h1>
 
 ```kafka-pub-sub``` is designed based on [KafkaJS](https://www.npmjs.com/package/kafkajs) with the support of stream processing that enables applications to publish, consume and process high volumes of record streams in a fast and durable way.
