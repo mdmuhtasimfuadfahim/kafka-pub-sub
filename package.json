@@ -1,0 +1,31 @@
+{
+  "name": "kafka-pub-sub",
+  "version": "1.0.0",
+  "description": "An application which is designed based on apache kafka pub-sub.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mdmuhtasimfuadfahim/kafka-pub-sub.git"
+  },
+  "bug": {
+    "url": "https://github.com/mdmuhtasimfuadfahim/kafka-pub-sub/issues"
+  },
+  "keywords": [
+    "NodeJS",
+    "KafkaJS",
+    "Winston",
+    "Joi"
+  ],
+  "author": "Md. Muhtasim Fuad Fahim <mdmuhtasim.fahim@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mdmuhtasimfuadfahim/kafka-pub-sub/issues"
+  },
+  "homepage": "https://github.com/mdmuhtasimfuadfahim/kafka-pub-sub#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "joi": "^17.9.2",
+    "kafkajs": "^2.2.4",
+    "winston": "^3.8.2"
+  }
+}
