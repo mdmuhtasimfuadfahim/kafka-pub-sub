@@ -1,6 +1,6 @@
 [![Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/mdmuhtasimfuadfahim/kafka-pub-sub)
 
-[![NPM Version](https://img.shields.io/npm/v/kafka-pub-sub.svg?style=flat-square)](https://www.npmjs.com/package/kafka-pub-sub)
+[![NPM Version](https://img.shields.io/npm/v/kafka-pub-sub.svg?style=flat-square)](https://www.npmjs.com/package/kafka-pub-sub)[![NPM Monthly Downloads](https://img.shields.io/npm/dm/kafka-pub-sub?style=flat-square)](https://npmjs.org/package/kafka-pub-sub)
 
 [![Last Commit](https://img.shields.io/github/last-commit/mdmuhtasimfuadfahim/kafka-pub-sub?style=flat-square)](https://github.com/mdmuhtasimfuadfahim/kafka-pub-sub/commits/) ![Language Most Used](https://img.shields.io/github/languages/top/mdmuhtasimfuadfahim/kafka-pub-sub?style=flat-square) [![Implementations](https://img.shields.io/badge/%F0%9F%92%A1-implementations-8C8E93.svg?style=flat-square)](https://github.com/mdmuhtasimfuadfahim/kafka-pub-sub/issues) ![Repository Size](https://img.shields.io/github/repo-size/mdmuhtasimfuadfahim/kafka-pub-sub?style=flat-square)
 
