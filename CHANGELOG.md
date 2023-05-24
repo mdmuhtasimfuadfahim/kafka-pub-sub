@@ -2,8 +2,8 @@
 
 #### Added
 
-- Jest testing support
-- Added test examples in README.md
+- Jest testing support [#8542963](https://github.com/mdmuhtasimfuadfahim/kafka-pub-sub/commit/8542963d0c81a8804fd34499dc2a5e80aa295b47)
+- Added test examples in README.md [#8542963](https://github.com/mdmuhtasimfuadfahim/kafka-pub-sub/commit/8542963d0c81a8804fd34499dc2a5e80aa295b47)
 
 #### Contributors to this release
 
