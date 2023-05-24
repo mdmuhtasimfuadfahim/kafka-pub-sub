@@ -8,6 +8,10 @@ const Joi = require('joi');
  */
 const validateData = (data) => {
 
+    if(!data) {
+        throw new Error("Invalid data: No data found to produce");
+    }
+
     const pubSubDataSchema = Joi.object()
         .keys()
         .unknown();

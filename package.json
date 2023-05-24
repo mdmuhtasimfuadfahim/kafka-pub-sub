@@ -10,11 +10,15 @@
   "bug": {
     "url": "https://github.com/mdmuhtasimfuadfahim/kafka-pub-sub/issues"
   },
+  "scripts": {
+    "test": "jest"
+  },
   "keywords": [
     "NodeJS",
     "KafkaJS",
     "Winston",
-    "Joi"
+    "Joi",
+    "Jest"
   ],
   "author": "Md. Muhtasim Fuad Fahim <mdmuhtasim.fahim@gmail.com>",
   "license": "MIT",
@@ -27,5 +31,8 @@
     "joi": "^17.9.2",
     "kafkajs": "^2.2.4",
     "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
   }
 }

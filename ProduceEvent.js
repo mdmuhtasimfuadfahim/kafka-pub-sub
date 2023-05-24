@@ -1,10 +1,10 @@
 const { Partitioners } = require('kafkajs');
-const kafkaProducer = require('./config/kafka');
+const kafka = require('./config/kafka');
 const validateTopic = require('./validation/validateTopic');
 const validateEvent = require('./validation/validateEvent');
 const validateData = require('./validation/validateData');
 
-const producer = kafkaProducer.producer({
+const producer = kafka.producer({
     createPartitioner: Partitioners.DefaultPartitioner
 });
 
@@ -42,6 +42,7 @@ const ProduceEvent = async (topic, event, data = {}) => {
             })
             await producer.disconnect();
         } catch (error) {
+            await producer.disconnect();
             return reject(error.message);
         }
     });

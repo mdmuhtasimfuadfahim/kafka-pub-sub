@@ -17,6 +17,7 @@
 - 🌱 [Prerequisites](#prerequisites)
 - ⏬ [Installing](#installing)
 - 👨‍💻 [Example](#example)
+- 👌 [Test](#test)
 - 💡 [How To Contribute](#how-to-contribute)
 - 👤 [Author](#author)
 - 🔏 [License](#license)
@@ -133,9 +134,18 @@ services:
 
 ---
 
+<h2 id="test">👌 Test</h2>
+
+- Clone the repository: `git clone https://github.com/mdmuhtasimfuadfahim/kafka-pub-sub.git`
+- Install the dependencies from root directory: `npm install`
+- Rename `.env.example` to `.env`
+- Now run: `npm run test` & see the results 😎
+
+---
+
 <h2 id="how-to-contribute">💡 How To Contribute</h2>
 
-- Fort it 😎
+- Fork it 😎
 - Create a feature branch: `git checkout -b my-feature`
 - Add your changes: `git add .`
 - Commit your changes: `git commit -m 'My new feature'`
