@@ -19,6 +19,7 @@
 - 👨‍💻 [Example](#example)
 - 👌 [Test](#test)
 - 💡 [How To Contribute](#how-to-contribute)
+- 📈 [Project Activity](#project-activity)
 - 👤 [Author](#author)
 - 🔏 [License](#license)
 
@@ -158,6 +159,14 @@ services:
 <i>🐛 Find and report issues</i><br />
 <i>🌟 Star the project</i><br />
 </p>
+
+[Back To The Top](#title)
+
+---
+
+<h2 id="project-activity">📈 Project Activity</h2>
+
+![Alt](https://repobeats.axiom.co/api/embed/2c532e8e1130dceb44a07e116a61e126efacd790.svg "Repobeats analytics image")
 
 [Back To The Top](#title)
 
