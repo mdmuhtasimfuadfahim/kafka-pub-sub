@@ -137,7 +137,8 @@ services:
 
 <h2 id="test">👌 Test</h2>
 
-- Clone the repository: `git clone https://github.com/mdmuhtasimfuadfahim/kafka-pub-sub.git`
+- Fork the repository.
+- Clone forked repository: `git clone https://github.com/username/forked-name.git`
 - Install the dependencies from root directory: `npm install`
 - Rename `.env.example` to `.env`
 - Now run: `npm run test` & see the results 😎
