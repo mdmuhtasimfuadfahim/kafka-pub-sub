@@ -137,7 +137,7 @@ services:
 
 <h2 id="test">👌 Test</h2>
 
-- Fork the repository.
+- Fork it 😎
 - Clone forked repository: `git clone https://github.com/username/forked-name.git`
 - Install the dependencies from root directory: `npm install`
 - Rename `.env.example` to `.env`
