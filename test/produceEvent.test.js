@@ -1,4 +1,4 @@
-const ProduceEvent = require('../ProduceEvent');
+const ProduceEvent = require('kafka-pub-sub/ProduceEvent');
 
 describe('ProduceEvent_function', () => {
     // Tests that the function produces an event successfully with valid inputs.
@@ -7,9 +7,10 @@ describe('ProduceEvent_function', () => {
         const topic = "valid_topic";
         const event = "valid_event";
         const data = { validData: true };
+        const headers = { 'validHeaders': 'true' };
 
         // Act
-        const result = await ProduceEvent(topic, event, data);
+        const result = await ProduceEvent(topic, event, data, headers);
 
         // Assert
         expect(result).toBeDefined();
@@ -34,9 +35,10 @@ describe('ProduceEvent_function', () => {
         const topic = "";
         const event = "valid_event";
         const data = { validData: true };
+        const headers = { validHeaders: true };
 
         // Act & Assert
-        await expect(ProduceEvent(topic, event, data)).rejects.toThrow("Invalid topic");
+        await expect(ProduceEvent(topic, event, data, headers)).rejects.toThrow("Invalid topic");
     });
 
     // Tests that the function throws an error when an invalid event is provided.
@@ -45,9 +47,10 @@ describe('ProduceEvent_function', () => {
         const topic = "valid_topic";
         const event = "";
         const data = { validData: true };
+        const headers = { 'validHeaders': 'true' };
 
         // Act & Assert
-        await expect(ProduceEvent(topic, event, data)).rejects.toThrow("Invalid event");
+        await expect(ProduceEvent(topic, event, data, headers)).rejects.toThrow("Invalid event");
     });
 
     // Tests that the function returns a promise that resolves when the message is sent successfully.
@@ -56,9 +59,10 @@ describe('ProduceEvent_function', () => {
         const topic = "valid_topic";
         const event = "valid_event";
         const data = { validData: true };
+        const headers = { 'validHeaders': 'true' };
 
         // Act
-        const result = await ProduceEvent(topic, event, data);
+        const result = await ProduceEvent(topic, event, data, headers);
 
         // Assert
         expect(result[0].topicName).toBe('valid_topic');
@@ -72,9 +76,22 @@ describe('ProduceEvent_function', () => {
         const topic = "valid_topic";
         const event = "valid_event";
         const data = "";
+        const headers = { validHeaders: true };
 
         // Act & Assert
-        await expect(ProduceEvent(topic, event, data)).rejects.toThrow("Invalid data");
+        await expect(ProduceEvent(topic, event, data, headers)).rejects.toThrow("Invalid data");
+    });
+
+    // Tests that the function throws an error when invalid headers is provided.
+    it("test_invalid_data_throws_error", async () => {
+        // Arrange
+        const topic = "valid_topic";
+        const event = "valid_event";
+        const data = { validData: true };
+        const headers = "";
+
+        // Act & Assert
+        await expect(ProduceEvent(topic, event, data, headers)).rejects.toThrow("Invalid headers");
     });
 
     // Tests that the function throws an error when an invalid topic is provided.

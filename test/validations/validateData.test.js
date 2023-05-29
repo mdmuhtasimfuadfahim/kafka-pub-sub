@@ -1,4 +1,4 @@
-const validateData = require('../../validation/validateData');
+const validateData = require('kafka-pub-sub/validation/validateData');
 
 describe('validateData_function', () => {
     // Tests that the function validates valid object data.

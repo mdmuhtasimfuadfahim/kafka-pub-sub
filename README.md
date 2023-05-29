@@ -71,7 +71,12 @@ app.post('/api', async (req, res) => {
         Name: "Md. Muhtasim Fuad Fahim",
         Email: "mdmuhtasim.fahim@gmail.com",
     };
-    const producedEvent = await ProduceEvent('TEST_TOPIC', 'TEST_EVENT', fakeData)
+
+    const headers = { 
+        'correlation-id': `1-${Date.now()}`,
+        'system-id': 'my-system-id'
+    };
+    const producedEvent = await ProduceEvent('TEST_TOPIC', 'TEST_EVENT', fakeData, headers)
     console.log(producedEvent)
 
     return res.status(200).send("Done!");

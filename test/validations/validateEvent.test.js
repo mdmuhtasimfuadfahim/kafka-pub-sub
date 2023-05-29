@@ -1,4 +1,4 @@
-const validateEvent = require('../../validation/validateEvent')
+const validateEvent = require('kafka-pub-sub/validation/validateEvent')
 
 describe('validateEvent_function', () => {
     // Tests that the function does not throw an error when valid string event with length between 5 and 20 characters is passed.

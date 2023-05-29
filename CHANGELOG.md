@@ -1,3 +1,13 @@
+### [1.1.3] - 2023-29-05
+
+#### Added
+
+- Kafka custom headers, Headers validation, Test coverage include custom headers
+
+#### Contributors to this release
+
+- <img src="https://avatars.githubusercontent.com/u/69357704?v=4/u/12586868?v&#x3D;4&amp;s&#x3D;18" alt="avatar" width="18"/> [Md. Muhtasim Fuad Fahim](https://github.com/mdmuhtasimfuadfahim)
+
 ### [1.0.3] - 2023-24-05
 
 #### Added
