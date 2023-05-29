@@ -4,7 +4,7 @@ const Joi = require('joi');
  * Validates a kafka produced data.
  *
  * @param {string} data - The data to be validated.
- * @throws {Error} Invalid data: The type of data should be string or the length should not be less than 5 and more than 20.
+ * @throws {Error} Invalid data: The type of data should be an object.
  */
 const validateData = (data) => {
 
