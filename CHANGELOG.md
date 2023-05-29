@@ -2,7 +2,7 @@
 
 #### Added
 
-- Kafka custom headers, Headers validation, Test coverage include custom headers
+- Kafka custom headers, Headers validation, Test coverage include custom headers [#c5427de](https://github.com/mdmuhtasimfuadfahim/kafka-pub-sub/commit/c5427de5eb04c931e5611f59635e7cc0408fa278)
 
 #### Contributors to this release
 
