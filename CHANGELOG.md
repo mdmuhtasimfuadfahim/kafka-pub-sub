@@ -1,13 +1,22 @@
+### [1.1.5] - 2023-01-06
+
+#### Added
+
+- husky.sh added to checks all commited codes
+#### Contributors to this release
+
+- <img src="https://avatars.githubusercontent.com/u/69357704?v=4/u/12586868?v&#x3D;4&amp;s&#x3D;18" alt="avatar" width="18"/> [Md. Muhtasim Fuad Fahim](https://github.com/mdmuhtasimfuadfahim)
+
 ### [1.1.4] - 2023-01-06
 
 #### Added
 
-- Eslint, Prettier code formatter and linter support
-- Husky pre-commit, post-commit and post-checkout rules added to commit
+- Eslint, Prettier code formatter and linter support [#7d5f1ae](https://github.com/mdmuhtasimfuadfahim/kafka-pub-sub/commit/7d5f1ae2888c661e7fcd668a7a922ef460eb37cf)
+- Husky pre-commit, post-commit and post-checkout rules added to commit [#7d5f1ae](https://github.com/mdmuhtasimfuadfahim/kafka-pub-sub/commit/7d5f1ae2888c661e7fcd668a7a922ef460eb37cf)
 
 #### Fixed
 
-- test validations fixed from previoous release (v1.1.3)
+- test validations fixed from previoous release (v1.1.3) [#7d5f1ae](https://github.com/mdmuhtasimfuadfahim/kafka-pub-sub/commit/7d5f1ae2888c661e7fcd668a7a922ef460eb37cf)
 
 #### Contributors to this release
 

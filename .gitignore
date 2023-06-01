@@ -10,3 +10,6 @@ package-lock.json
 
 # env file
 .env
+
+# Code coverage
+coverage

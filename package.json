@@ -1,6 +1,6 @@
 {
   "name": "kafka-pub-sub",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "An application which is designed based on apache kafka pub-sub.",
   "main": "index.js",
   "repository": {
@@ -11,7 +11,14 @@
     "url": "https://github.com/mdmuhtasimfuadfahim/kafka-pub-sub/issues"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest -i --colors --verbose --detectOpenHandles",
+    "test:watch": "jest -i --watchAll",
+    "coverage": "jest -i --coverage",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier --check **/*.js",
+    "prettier:fix": "prettier --write **/*.js",
+    "prepare": "husky install"
   },
   "keywords": [
     "NodeJS",
