@@ -7,20 +7,17 @@ const Joi = require('joi');
  * @throws {Error} Invalid headers: The type of headers should be a object.
  */
 const validateHeaders = (headers) => {
+  if (!headers) {
+    throw new Error('Invalid headers: No headers found');
+  }
 
-    if(!headers) {
-        throw new Error("Invalid headers: No headers found");
-    }
+  const pubSubheadersSchema = Joi.object().keys().unknown();
 
-    const pubSubheadersSchema = Joi.object()
-        .keys()
-        .unknown();
+  const { error } = pubSubheadersSchema.prefs({ errors: { label: 'key' } }).validate(headers);
 
-    const { error } = pubSubheadersSchema.prefs({ errors: { label: 'key' } }).validate(headers);
-
-    if (error) {
-        throw new Error("Invalid headers: The type of headers should be object");
-    }
+  if (error) {
+    throw new Error('Invalid headers: The type of headers should be object');
+  }
 };
 
 module.exports = validateHeaders;

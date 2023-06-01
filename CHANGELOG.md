@@ -1,3 +1,18 @@
+### [1.1.4] - 2023-01-06
+
+#### Added
+
+- Eslint, Prettier code formatter and linter support
+- Husky pre-commit, post-commit and post-checkout rules added to commit
+
+#### Fixed
+
+- test validations fixed from previoous release (v1.1.3)
+
+#### Contributors to this release
+
+- <img src="https://avatars.githubusercontent.com/u/69357704?v=4/u/12586868?v&#x3D;4&amp;s&#x3D;18" alt="avatar" width="18"/> [Md. Muhtasim Fuad Fahim](https://github.com/mdmuhtasimfuadfahim)
+
 ### [1.1.3] - 2023-29-05
 
 #### Added

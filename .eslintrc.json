@@ -1,0 +1,19 @@
+{
+  "env": {
+    "node": true,
+    "jest": true,
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["airbnb-base", "plugin:jest/recommended", "plugin:security/recommended", "plugin:prettier/recommended"],
+  "plugins": ["jest", "security", "prettier"],
+  "rules": {
+    "no-console": "error",
+    "func-names": "off",
+    "no-underscore-dangle": "off",
+    "consistent-return": "off",
+    "jest/expect-expect": "off",
+    "semi": ["error", "always"],
+    "security/detect-object-injection": "off"
+  }
+}

@@ -6,7 +6,7 @@ const validateData = require('./validation/validateData');
 const validateHeaders = require('./validation/validateHeaders');
 
 const producer = kafka.producer({
-    createPartitioner: Partitioners.DefaultPartitioner
+  createPartitioner: Partitioners.DefaultPartitioner,
 });
 
 /**
@@ -20,34 +20,36 @@ const producer = kafka.producer({
  * @throws {string} an error message if message sending fails.
  */
 const ProduceEvent = async (topic, event, data = {}, headers = {}) => {
-    // basic validations
-    validateTopic(topic);
-    validateEvent(event);
-    validateData(data);
-    validateHeaders(headers);
+  // basic validations
+  validateTopic(topic);
+  validateEvent(event);
+  validateData(data);
+  validateHeaders(headers);
 
-    await producer.connect();
+  await producer.connect();
 
-    return new Promise(async (resolve, reject) => {
-        try {
-            const message = [{
-                key: `key-${event}`,
-                value: JSON.stringify({ data }),
-                headers,
-            }];
+  return new Promise((resolve, reject) => {
+    try {
+      const message = [
+        {
+          key: `key-${event}`,
+          value: JSON.stringify({ data }),
+          headers,
+        },
+      ];
 
-            const response = await producer.send({
-                topic,
-                messages: message,
-            });
+      const response = producer.send({
+        topic,
+        messages: message,
+      });
 
-            await producer.disconnect();
-            resolve(response);
-        } catch (error) {
-            await producer.disconnect();
-            reject(error.message);
-        }
-    });
+      producer.disconnect();
+      resolve(response);
+    } catch (error) {
+      producer.disconnect();
+      reject(error.message);
+    }
+  });
 };
 
 module.exports = ProduceEvent;
