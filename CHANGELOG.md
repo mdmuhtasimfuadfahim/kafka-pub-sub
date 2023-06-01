@@ -2,7 +2,8 @@
 
 #### Added
 
-- husky.sh added to checks all commited codes
+- [husky.sh added to checks all commited codes](https://github.com/mdmuhtasimfuadfahim/kafka-pub-sub/commit/178609dd26c4e0de31fb6834c994bf982ae0bbd1)
+
 #### Contributors to this release
 
 - <img src="https://avatars.githubusercontent.com/u/69357704?v=4/u/12586868?v&#x3D;4&amp;s&#x3D;18" alt="avatar" width="18"/> [Md. Muhtasim Fuad Fahim](https://github.com/mdmuhtasimfuadfahim)
