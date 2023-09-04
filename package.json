@@ -1,6 +1,6 @@
 {
   "name": "kafka-pub-sub",
-  "version": "1.1.0.6",
+  "version": "1.1.6",
   "description": "An application which is designed based on apache kafka pub-sub.",
   "main": "index.js",
   "repository": {
