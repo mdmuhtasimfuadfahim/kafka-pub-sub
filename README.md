@@ -56,7 +56,7 @@ yarn add kafka-pub-sub
 
 #### Project stucture
 
-<img width="254" alt="project-structure" src="https://private-user-images.githubusercontent.com/69357704/265319065-4f0d4a56-a842-488f-88d4-17e948f0dfd6.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE2OTM4MDExMTYsIm5iZiI6MTY5MzgwMDgxNiwicGF0aCI6Ii82OTM1NzcwNC8yNjUzMTkwNjUtNGYwZDRhNTYtYTg0Mi00ODhmLTg4ZDQtMTdlOTQ4ZjBkZmQ2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFJV05KWUFYNENTVkVINTNBJTJGMjAyMzA5MDQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjMwOTA0VDA0MTMzNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWZkY2I2Njk2NDA3YzY3MzNmNTRhNjFmMzNhMWFhMGU3ODc1NDY0NzQxZDA0ZmVmNzVhM2VmY2NiYjRmODYzZGMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.HRzkCPl62oyLUzKr-b9kwMxPsfGjskdaPuuyaTkF4CQ">
+<img width="254" alt="project-structure" src="./image/projectStructure.png">
 
 
 > Note: Create NodeJS environment in both service-1 and service-2 and create server using your favourite NodeJS framewwork.
